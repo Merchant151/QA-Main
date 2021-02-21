@@ -3,7 +3,7 @@ package org.example;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-import sun.awt.X11.XSystemTrayPeer;
+//import sun.awt.X11.XSystemTrayPeer;
 
 import javax.swing.plaf.PanelUI;
 import java.math.BigDecimal;
