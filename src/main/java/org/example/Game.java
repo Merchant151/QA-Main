@@ -8,8 +8,8 @@ import java.util.List;
 /**
  *
  *
- * Represents a video game object
- *
+ * Represents a video game object for video game such as PC games consoles games mobile games, etc.
+ * This class will be used in a retro-game collection or online game store.
  *
  */
 public class Game {
@@ -21,11 +21,24 @@ public class Game {
     private List<String> genre;
     private BigDecimal price;
     private String rating;
+    private int score;
 
     public Game() {
     }
 
-    public Game(List<String> platform, String name, LocalDate date, String developer, List<String> genre, BigDecimal price, String rating) {
+    /**
+     *  Constructor that requires you to enter relevant information of a Game
+     *
+     * @param platform a {@code List} of platforms of the game, e.g. PC, PS5, switch, etc
+     * @param name the name of the game
+     * @param date the released (the day, month and year) of a game
+     * @param developer the developer of the game
+     * @param genre a { List} of genres of a game, e.g. rpg, action, puzzle, etc
+     * @param price the price of the game as a floating point value represented as a {@code BigDecimal}
+     * @param rating the rating of a game, e.g. PG, M, E, etc
+     * @param score a number of 0 to 100 that indicates how good a game is
+     */
+    public Game(List<String> platform, String name, LocalDate date, String developer, List<String> genre, BigDecimal price, String rating, int score) {
         this.platform = platform;
         this.name = name;
         this.date = date;
@@ -33,6 +46,7 @@ public class Game {
         this.genre = genre;
         this.price = price;
         this.rating = rating;
+        this.score = score;
     }
 
     public List<String> getPlatform() {
@@ -91,6 +105,18 @@ public class Game {
         this.rating = rating;
     }
 
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    /**
+     *  This Method sprints the info of a game object
+     *
+     */
     public void printGame(){
         System.out.println(platform);
         System.out.println(name);
@@ -99,5 +125,6 @@ public class Game {
         System.out.println(genre);
         System.out.println(price);
         System.out.println(rating);
+        System.out.println(score);
     }
 }
