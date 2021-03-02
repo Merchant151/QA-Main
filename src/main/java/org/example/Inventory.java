@@ -75,11 +75,11 @@ public class Inventory {
         return highest;
     }
 
-    public void printAveragePriceOfAllGames(){
+    /*public void printAveragePriceOfAllGames(){
         for(Game g: inventory){
             g.printGame();
         }
-    }
+    } */
     public int getSize(){
         return inventory.size();
     }
@@ -95,6 +95,13 @@ public class Inventory {
 
         }
         return total.divide(new BigDecimal(inventory.size() + ""));
+    }
+
+    /**
+     *  Print to console the average price of all games in inventory
+     */
+    public void printAveragePriceOfAllGames(){
+        System.out.println(getAveragePriceOfAllGames());
     }
 
 }

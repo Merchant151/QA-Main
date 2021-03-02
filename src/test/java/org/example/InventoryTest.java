@@ -71,6 +71,5 @@ public class InventoryTest {
         inv.add(g2);
         BigDecimal average = inv.getAveragePriceOfAllGames();
         Assert.assertEquals(new BigDecimal("15"),average);
-
     }
 }
