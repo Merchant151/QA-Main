@@ -26,13 +26,21 @@ public class Portfolio {
         stonks.add(stonk);
     }
 
-    public BigDecimal getTotalValue(){
-        BigDecimal total = new BigDecimal("0");
+    public double getTotalValue(){
+        //BigDecimal total = new BigDecimal("0");
+        double total = 0;
         for (int i = 0; i < stonks.size(); i++){
-            total = total.add(stonks.get(i).getPrice().multiply(stonks.get(i).getShares()));
+            //total = total.add(stonks.get(i).getPrice().multiply(new BigDecimal(+ stonks.get(i).getShares())));
+            total += stonks.get(i).getPrice().doubleValue() * stonks.get(i).getShares();
         }
+        return total;
     }
 
-
-
+    /**
+     * Returns the size of the inventory
+     * @return size of inventory
+     */
+    public int getSize() {
+        return stonks.size();
+    }
 }
