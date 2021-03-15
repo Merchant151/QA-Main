@@ -29,9 +29,11 @@ public class Portfolio {
     public BigDecimal getTotalValue(){
         BigDecimal total = new BigDecimal("0");
         for (int i = 0; i < stonks.size(); i++){
-            total = total.add(stonks.get(i).getPrice().multiply(stonks.get(i).getShares()));
+            //total = total.add(stonks.get(i).getPrice().multiply(stonks.get(i).getShares()));
         }
+        return null;
     }
+
 
 
 
