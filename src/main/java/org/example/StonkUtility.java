@@ -12,6 +12,7 @@ import java.math.BigDecimal;
 public class StonkUtility {
     /**
      * Returns price of a Stonk given a ticker
+     *
      * @param ticker string value of ticker
      * @return current price of Stonk
      */
@@ -19,9 +20,28 @@ public class StonkUtility {
         Stock stock;
         try {
             stock = YahooFinance.get(ticker);
-        }catch (IOException e){
+        } catch (IOException e) {
             throw new RuntimeException("Stonk could not be retrieved");
         }
         return stock.getQuote().getPrice();
+    }
+
+    /**
+     * Grab the current (latest) price of a stonk given the ticker
+     *
+     * @param ticker the stonk ticker as a double
+     */
+    public static double getPriceOfStonk(String ticker) {
+        double price = 0;
+        try {
+            Stock stock = YahooFinance.get(ticker);
+            price = stock.getQuote().getPrice().doubleValue();
+        } catch (IOException e) {
+            throw new RuntimeException("Stonk data could not be retrived!");
+        } catch (NullPointerException e) {
+            return 0; //indicate that Stonk does not exist
+        }
+        return price;
+
     }
 }
