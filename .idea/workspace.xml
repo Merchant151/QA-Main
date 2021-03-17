@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f22caf61-9456-4e1c-9f8b-4c93ade01f55" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StonkUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StonkUtility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +43,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PortfolioTest.testRemoveStonk">
+  <component name="RunManager" selected="JUnit.PortfolioTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
       <module name="QA-Main" />
@@ -119,8 +117,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PortfolioTest.testRemoveStonk" />
         <item itemvalue="JUnit.PortfolioTest" />
+        <item itemvalue="JUnit.PortfolioTest.testRemoveStonk" />
         <item itemvalue="Application.App" />
         <item itemvalue="JUnit.StonkUtilityTest.testStonkPrice" />
       </list>
