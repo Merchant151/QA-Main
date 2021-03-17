@@ -100,9 +100,14 @@ public class User {
     public void savePortfolio() {
         try {
             this.getPortfolio().saveToDisk(User.PORTFOLIO_FILE);
+            String line ="";
+            /*for(int i = 0; i < portfolio.size();i++){
+                portfolio.get
+            }*/
         } catch(IOException e) {
             throw new RuntimeException("sorry can't save to file");
         }
+
     }
 
     /**

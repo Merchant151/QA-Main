@@ -22,8 +22,14 @@ public class StonkUtility {
             stock = YahooFinance.get(ticker);
         } catch (IOException e) {
             throw new RuntimeException("Stonk could not be retrieved");
+        } catch (NullPointerException e) {
+            return new BigDecimal(""+0.0);
         }
-        return stock.getQuote().getPrice();
+        try {
+            return stock.getQuote().getPrice();
+        }catch (Exception e){//lol
+            return new BigDecimal(""+0.0);
+        }
     }
 
     /**
