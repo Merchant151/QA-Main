@@ -59,17 +59,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HelloSelenium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QA-Main" />
       <extension name="coverage">
@@ -153,6 +142,7 @@
       <updated>1614750326978</updated>
       <workItem from="1614750330245" duration="12068000" />
       <workItem from="1615222875976" duration="5848000" />
+      <workItem from="1616469128188" duration="3219000" />
     </task>
     <servers />
   </component>

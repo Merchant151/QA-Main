@@ -41,7 +41,7 @@ public class HelloSelenium {
         driver.get("https://www.google.com");
         WebElement qBox = driver.findElement(By.name("q"));
         qBox.clear();
-        qBox.sendKeys("Joshua Miller linkedin");
+        qBox.sendKeys("Jaylen Eley linkedin");
         qBox.submit();
         List<WebElement> headings = driver.findElements(By.tagName("h3"));
         //System.out.println(headings.get(0).getText());
